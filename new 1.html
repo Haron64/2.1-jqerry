@@ -1,0 +1,65 @@
+<Html>
+<head>
+<script src="../jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+
+var v;
+if ($("v").clickup) {
+v="slow";
+} else {
+v="fast";
+}
+
+
+$(".europe").fadeToggle(v);
+});
+$("#btn2").click(function(){
+$(".asia").fadeToggle(v);
+$("#btn3").click(function(){
+$(".africa").fadeToggle(v);
+$("#btn4").click(function(){
+$(".america").fadeToggle(v);
+});
+});
+});
+});
+</script>
+</head>
+<body>
+<input type="button" id="btn1"
+value="показать/скрыть страны Европы"/><br>
+<input type="button" id="btn2"
+value="показать/скрыть страны Азии"/><br>
+<input type="button" id="btn3"
+value="показать/скрыть страны Африки"/><br>
+<input type="button" id="btn4"
+value="показать/скрыть страны Америки "/><br>
+<input type="button" id="v"
+value="Медленно"/><br>
+
+<p class="america">США</p>
+<p class="asia">Монголия</p>
+<p class="europe">Германия</p>
+<p class="america">Бразилия</p>
+<p class="europe">Италия</p>
+<p class="africa">Нигерия</p>
+<p class="america">Ямайка</p>
+<p class="europe">Сербия</p>
+<p class="asia">Китай</p>
+<p class="america">Куба</p>
+<p class="europe">Украина</p>
+<p class="america">Мексика</p>
+<p class="africa">OA"</p>
+<p class="asia">Тайланд</p>
+<p class="asia">Япония</p>
+<p class="africa">Кения</p>
+<p class="africa">Уганда</p>
+<p class="asia">Вьетнам</p>
+<p class="america">Канада</p>
+<p class="europe">Франция</p>
+<p class="africa">Египет</p>
+
+</body>
+</html>
