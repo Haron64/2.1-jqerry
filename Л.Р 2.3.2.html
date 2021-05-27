@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../jquery-3.6.0.min.js"></script>
+		<script>
+		
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#txt").slideUp(
+					3000,
+					function(){
+						alert("Текст скрыт");
+					}
+				);
+			});
+		});
+		
+		</script>
+	</head>
+	
+	<body>
+	
+		<input type="button" id="btn1" value="Скрыть текст"/>
+		<div id="txt">
+			Идти ему было недолго; он даже знал,
+			сколько шагов от ворот его дома: ровно семьсот тридцать.
+			Как то раз он их сосчитал,когда уж очень размечтался.
+			В то время он и сам еще неверил этим мечтам своим и только 
+			но соблазнительной дерзостью.
+		</div>
+	
+	</body>
+</html>
