@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="../jquery-3.6.0.min.js"></script>
+<script>
+
+var left=true;
+var right=false;
+var transparent=false
+$(document).ready(function(){
+$("#btn3").click(function(){
+transparent=!transparent
+if (transparent){
+$("#txt").animate({opacity: '100%'});
+} else {
+$("#txt").animate({opacity: '30%'});
+}
+});
+});
+$(document).ready(function(){
+$("#btn1").click(function(){
+left=!left;
+if (left){
+$("#txt").animate({left: '10px'});
+} else {
+$("#txt").animate({left: '200px'});
+}
+});
+});
+$(document).ready(function(){
+$("#btn2").click(function(){
+left=!left;
+if (right){
+$("#txt").animate({right: '100px'});
+} else {
+$("#txt").animate({right: '200px'});
+}
+});
+});
+</script>
+</head>
+
+<body>
+<input type="checkbox" checked=left id="btn1">
+<label for="btn1">Слева</label>
+<div id="txt" style="left:10px;background:red;height:250px;width:250px;position:absolute"></div>
+
+<input type="checkbox" checked=left id="btn2">
+<label for="btn2">Справа</label>
+<div id="txt" style="right:10px;background:green;height:250px;width:250px;position:absolute"></div>
+
+<input type="checkbox" id="btn3">
+<label for="btn3">Прозрачный</label>
+<div id="txt" ></div>
+</body>
+</html>
